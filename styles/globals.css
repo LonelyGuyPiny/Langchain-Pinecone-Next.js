@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #f2f2f2;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html {
+  background: #202123;
+}
+
+@media (max-width: 720px) {
+  pre {
+    width: calc(100vw - 110px);
+  }
+}
+
+pre:has(div.codeblock) {
+  padding: 0;
+}
+
+.dark .form-setting label, .dark .form-setting button, .dark .form-setting input, .dark .form-setting .ant-upload, .dark .form-setting p, .dark .form-setting span {
+  color: white !important;
+}
+
+.form-setting label, .form-setting button, .form-setting input {
+  font-size: 16px !important;
+}
+
+.form-setting label {
+  margin-top: 4px;
+}
+
+.form-setting .avatar-uploader {
+  display: flex;
+  justify-content: center;
+}
+
+.form-setting button {
+  width: 150px;
+}
+
+.form-setting .ant-divider {
+  padding-left: 20px;
+}
+
+.ant-modal-body .ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.ant-modal-body .ant-btn-primary:hover {
+  background-color: #4096ff;
+}
+
+.dark .ant-spin-dot-item {
+  background-color: white !important;
+}
+
+.spin-style .ant-spin-text {
+  margin-top: 12px;
+  font-size: large;
+}
+
+.dark .spin-style .ant-spin-text  {
+  color: #ffffff;
+}
+
+.spin-style .ant-spin-dot-item {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.spin-style .ant-spin-dot-spin {
+  width: 60px !important;
+  height: 60px !important;
+}
